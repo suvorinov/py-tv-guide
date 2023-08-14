@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "py-tv-guide"
+version = "0.1.0"
+description = ""
+authors = ["Oleg Suvorinov <suvorinovoleg@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "py_tv_guide"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+py-xmltv = "^1.0.8"
+pyyaml = "^6.0"
+py-random-useragent = "^0.1.0"
+py-utils = { path = '../py_utils/', develop = true }
+py-downloader = { path = '../py_downloader/', develop = true }
+tqdm = "^4.65.0"
+
+[tool.poetry.scripts]
+tv_guide = "py_tv_guide.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

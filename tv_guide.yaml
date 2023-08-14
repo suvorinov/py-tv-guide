@@ -1,0 +1,16 @@
+# Default config for TV-Guide
+proxy: None
+user_agent: None
+timespan: 7
+pool_size: 10
+channels:
+  -
+    site: programtv.ru
+    site_id: programtv.ru
+    channel: 146
+    time_format: '%d%m%Y%H%M%S'
+  -
+    site: programtv.ru
+    site_id: programtv.ru
+    channel: 711
+    time_format: '%d%m%Y%H%M%S'
